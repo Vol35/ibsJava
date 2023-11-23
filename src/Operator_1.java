@@ -10,9 +10,11 @@ public class Operator_1 {
         double z = sc.nextDouble();
         double avg = (x+y+z)/3;
         System.out.println("Среднее арифметическое = " + avg);
-        double delimNaDva = avg/2;
-        int result = (int)Math.floor(delimNaDva);
-        if (delimNaDva>3)
+        double delenie = avg/2;
+        double result = (double) Math.floor(delenie);
+        System.out.println(result);
+        if (result >3)
+
             System.out.println("Программа выполнена корректно");
         else {
             System.out.println("Что то пошло не так :(");
