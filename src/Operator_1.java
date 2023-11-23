@@ -12,7 +12,8 @@ public class Operator_1 {
         System.out.println("Среднее арифметическое = " + avg);
         double delenie = avg/2;
         double result = (double) Math.floor(delenie);
-        System.out.println(result);
+        //System.out.println(result); округление delenie
+
         if (result >3)
 
             System.out.println("Программа выполнена корректно");
