@@ -11,18 +11,19 @@ public class Operator_2 {
             double answer;
                 switch (symbol){
                     case '+': answer = num1 + num2;
-                        System.out.printf("Результат = " + String.valueOf(answer));
+                        System.out.println("Результат = " + answer);
                         break;
                     case '-': answer = num1 - num2;
-                        System.out.printf("Результат = " + String.valueOf(answer));
+                        System.out.println("Результат = " + answer);
                         break;
                     case '*': answer = num1 * num2;
-                        System.out.printf("Результат = " + String.valueOf(answer));
+                        System.out.println("Результат = " + answer);
                         break;
                     case '/': answer = num1 / num2;
-                        System.out.printf("Результат = " + String.valueOf(answer));
+                        System.out.println("Результат = " + answer);
                         break;
-                    default:  System.out.printf("Ошибка");
+                    default:
+                        System.out.println("Ошибка");
                 }
     }
 
