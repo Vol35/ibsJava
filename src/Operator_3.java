@@ -20,7 +20,7 @@ public class Operator_3 {
             System.out.print("Неверный ввод, введите 1 или 2");
         }
         System.out.print("Введите количество единиц: ");
-        amount = sc.nextFloat();
+        amount = sc.nextDouble();
 
         switch (choice2) {
             case 1:
