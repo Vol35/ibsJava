@@ -3,11 +3,9 @@ import java.util.Scanner;
 public class Cycle_3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        // Шаг 1: Ввод размера массива
+
         System.out.print("Введите размер массива: ");
         int size = scanner.nextInt();
-
-        // Создаем массив указанного размера
         double[] array = new double[size];
 
         System.out.println("Введите элементы массива:");
