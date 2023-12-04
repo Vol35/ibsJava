@@ -13,7 +13,6 @@ public class Cycle_1 {
             array[i] = in.nextInt();
             if (array[i] == x | array[i] == y | array[i] == z )
                 System.out.println("Данное значение имеется в константах");
-
         }
     }
 }
