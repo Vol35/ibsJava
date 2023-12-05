@@ -21,7 +21,7 @@ public class Data_2 {
         }
 
         String replaced = str.replace('a', 'o');
-        String jovo = replaced.substring(7, 11);
-        System.out.println("Подстрока 'Jovo': " + jovo);
+        String Jovo = replaced.substring(7, 11);
+        System.out.println("Подстрока 'Jovo': " + Jovo);
     }
 }
