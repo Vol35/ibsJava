@@ -7,7 +7,7 @@ public class Data_4 {
 
         // Заполнение массива рандомными значениями от -20 до 20
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = random.nextInt(40) - 20;
+            arr[i] = random.nextInt(41) - 20;
         }
 
         System.out.println("Массив:");
