@@ -8,7 +8,7 @@ public class Final_3 {
         System.out.print("Количество строк: ");
         int n = scanner.nextInt();
 
-        scanner.nextLine(); // Чтение символа перевода строки после ввода числа
+        scanner.nextLine();
 
         String maxString = "";
 
