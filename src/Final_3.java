@@ -1,26 +1,38 @@
 import java.util.Scanner;
 
 public class Final_3 {
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Количество строк: ");
         int n = scanner.nextInt();
-
         scanner.nextLine();
 
-        String maxString = "";
+        String maxUniqueString = "";
+        int maxUniqueChars = 0;
 
-        for (int i = 0; i < n; i++) {
-            System.out.print("Строка " + (i + 1) + ": ");
-            String input = scanner.nextLine();
+        for (int i = 1; i <= n; i++) {
+            System.out.print("Строка " + i + ": ");
+            String string = scanner.nextLine();
 
-            if (input.length() > maxString.length()) {
-                maxString = input;
+            int uniqueChars = countUniqueChars(string);
+
+            if (uniqueChars > maxUniqueChars) {
+                maxUniqueChars = uniqueChars;
+                maxUniqueString = string;
             }
         }
 
-        System.out.println("Ответ: " + maxString);
+        System.out.println("Ответ: " + maxUniqueString);
+    }
+
+    private static int countUniqueChars(String string) {
+        int count = 0;
+        for (int i = 0; i < string.length(); i++) {
+            if (string.indexOf(string.charAt(i)) == i) {
+                count++;
+            }
+        }
+        return count;
     }
 }
